@@ -1,0 +1,55 @@
+body{
+    background-color: #F0EBE3;
+}
+
+.bg-image{
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+}
+.bg-imager{
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    background-attachment: fixed;
+
+}
+
+.btn-utama{
+    background-color: #F0EBE3;
+    color: #000;
+    border-radius: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.btn-utama:hover{
+    background-color: #E4DCCF;
+    color: #000;
+    border-radius: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .3s;
+}
+
+.waves{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -7px;
+    width: 100%;
+}
+
+.profil{
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.bg-card{
+    background-image: url('/public/gambar/grunge-wall-texture.jpg');
+}
+
