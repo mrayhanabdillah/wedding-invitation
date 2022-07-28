@@ -26,12 +26,15 @@
                 <p class="text-2xl font-bold">You're Invited</p>
                 <p class="mb-5 font-bold">The Wedding Celebration of</p>
             </div>
-            <button class="btn-utama btn-sm mt-[15rem]" id="close-modal"><i class="bi bi-envelope-heart mr-1"></i>Open
+            <button class="btn-utama btn-sm mt-[15rem]" id="close-modal" onclick="playAudio()"><i class="bi bi-envelope-heart mr-1"></i>Open
                 Invitation</button>
         </div>
     </div>
 
     <section id="content" class="hidden">
+        <audio id="myAudio">
+            <source src="{{ asset('lagu/lagu.mp3') }}" type="audio/mpeg">
+        </audio>
         <div class="bg-imager flex items-center min-h-screen dark:text-white"
             style="background-image: url('{{ asset('gambar/pic6.png') }}">
             <div class="banner-content text-center text-white">
@@ -124,6 +127,13 @@
         }
         closeBtn.addEventListener('click', toggleModal)
     })
+
+    var x = document.getElementById("myAudio");
+
+    function playAudio() {
+        x.play();
+    }
+
 </script>
 </body>
 
