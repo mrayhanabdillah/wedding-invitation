@@ -18,7 +18,7 @@
 </head>
 
 <body class="antialiased">
-    <div class="bg-image flex items-center min-h-screen" id="overlay"
+    <div class="bg-image flex items-center min-h-screen dark:text-white" id="overlay"
         style="background-image: url('{{ asset('gambar/pic5.png') }}">
         <div class="banner-content text-center text-neutral-content">
             <div class="max-w-md">
@@ -32,8 +32,8 @@
     </div>
 
     <section id="content" class="hidden">
-        <div class="bg-imager flex items-center min-h-screen"
-            style="background-image: url('{{ asset('gambar/pic5.png') }}">
+        <div class="bg-imager flex items-center min-h-screen dark:text-white"
+            style="background-image: url('{{ asset('gambar/pic6.png') }}">
             <div class="banner-content text-center text-neutral-content">
                 <div class="max-w-md">
                     <p class="mb-5 text-2xl font-bold">Dear,</p>
