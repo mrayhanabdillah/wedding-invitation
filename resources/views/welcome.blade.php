@@ -18,17 +18,42 @@
 </head>
 
 <body class="antialiased">
-    <div class="bg-image flex items-center min-h-screen" id="overlay"
-        style="background-image: url('{{ asset('gambar/pic5.png') }}">
+
+    <div class="bg-image flex items-center min-h-screen" id="overlay">
+        <svg class="waves2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+            </g>
+        </svg>
         <div class="banner-content text-center text-white">
             <div class="max-w-md">
                 <p class="mb-5 text-2xl font-bold">Dear,</p>
                 <p class="text-2xl font-bold">You're Invited</p>
                 <p class="mb-5 font-bold">The Wedding Celebration of</p>
             </div>
-            <button class="btn-utama btn-sm mt-[15rem]" id="close-modal" onclick="playAudio()"><i class="bi bi-envelope-heart mr-1"></i>Open
+            <button class="btn-utama btn-sm mt-[15rem]" id="close-modal" onclick="playAudio()"><i
+                    class="bi bi-envelope-heart mr-1"></i>Open
                 Invitation</button>
         </div>
+        <svg class="waves1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+            </g>
+        </svg>
     </div>
 
     <section id="content" class="hidden">
@@ -36,7 +61,7 @@
             <source src="{{ asset('lagu/lagu.mp3') }}" type="audio/mpeg">
         </audio>
         <div class="bg-imager flex items-center min-h-screen dark:text-white"
-            style="background-image: url('{{ asset('gambar/pic6.png') }}">
+            style="background-image: url('{{ asset('foto/DSC00007.jpg') }}">
             <div class="banner-content text-center text-white">
                 <div class="max-w-md">
                     <p class="mb-5 text-2xl font-bold">Dear,</p>
@@ -44,30 +69,24 @@
                     <p class="mb-5 font-bold">The Wedding Celebration of</p>
                 </div>
             </div>
-            <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill="#F0EBE3" fill-opacity="1"
-                    d="M0,64L80,106.7C160,149,320,235,480,272C640,309,800,299,960,261.3C1120,224,1280,160,1360,128L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
-                </path>
-            </svg>
         </div>
 
         <div class="container mx-auto flex justify-center text-center mt-12">
             <div class="lg:max-w-sm">
+                <img src="{{ asset('gambar/diamond.png') }}" height="50" width="50" class="mx-auto mb-5">
                 <p class="mb-3 sm:text-xs lg:text-2xl">سْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</p>
-                <p class="mb-8 sm:text-xs lg:text-2xl">“Semoga Allah menghimpun yang terserak dari keduanya, memberkati
-                    mereka berdua dan kiranya Allah
-                    meningkatkan kualitas keturunan mereka, menjadikannya pembuka pintu rahmat, sumber ilmu dan hikmah
-                    serta
-                    pemberi rasa aman bagi umat.”</p>
-                <p class="text-xs">(Doa Nabi Muhammad SAW, Pada Pernikahan Putrinya Fatimah Azzahra Dengan Ali Bin Abi
-                    Thalib)</p>
+                <p class="mb-8 sm:text-xs lg:text-2xl">“Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan
+                    pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya,
+                    dan Dia menjadikan di antaramu rasa kasih dan sayang. Sungguh, pada yang demikian itu benar-benar
+                    terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.
+                    ”</p>
+                <p class="sm:text-md lg:text-3xl font-bold">(Ar-Rum 21)</p>
             </div>
         </div>
 
         <div class="flex justify-center flex-col lg:flex-row lg:flex-wrap lg:items-stretch items-center gap-4 mt-2">
             <div class="mt-12">
-                <div class="card w-80 lg:w-96 shadow-xl items-center text-center"
-                    style="background-image: url('{{ asset('gambar/bg.jpg') }}">
+                <div class="card w-80 lg:w-96 shadow-xl items-center text-center" style="background-color:#04293A;">
                     <div class="card-body">
                         <img src="{{ asset('gambar/teteh.jpg') }}" class="profil mx-auto mb-5">
                         <a href="https://www.instagram.com/khansamadiyah/" target="_blank"
@@ -89,8 +108,7 @@
             </div>
 
             <div class="mt-12">
-                <div class="card w-80 lg:w-96 shadow-xl items-center text-center"
-                    style="background-image: url('{{ asset('gambar/bg.jpg') }}">
+                <div class="card w-80 lg:w-96 shadow-xl items-center text-center" style="background-color:#04293A;">
                     <div class="card-body">
                         <img src="{{ asset('gambar/aldy.jpg') }}" class="profil mx-auto mb-5">
                         <a href="https://www.instagram.com/rhenaldifrds/" target="_blank"
@@ -106,6 +124,49 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="container mx-auto flex justify-center items-center text-center mt-12">
+            <div class="lg:max-w-sm">
+                <p class="mb-8 sm:text-xs lg:text-2xl">Dengan rahmat dan ridho Allah Subhanahu Wa Ta'ala,
+                    perkenankanlah
+                    kami mengundang Bapak/Ibu/Saudara/i untuk hadir diacara pernikahan kami yang akan dilaksanakan pada
+                    :</p>
+            </div>
+        </div>
+        <div class="bg-imager flex min-h-screen dark:text-white"
+            style="background-image: url('{{ asset('foto/DSC00028.jpg') }}">
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#304555" fill-opacity="1"
+                    d="M0,64L48,96C96,128,192,192,288,213.3C384,235,480,213,576,181.3C672,149,768,107,864,80C960,53,1056,43,1152,42.7C1248,43,1344,53,1392,58.7L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+                </path>
+            </svg>
+            <div class="banner-content flex items-center text-center text-white">
+                <div class="max-w-md">
+                    <svg class="mx-auto" xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                        fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+                        <path
+                            d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z" />
+                        <path
+                            d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                    </svg>
+                    <p class="mt-5 mb-5  text-2xl font-bold">Wedding Dinner</p>
+                    <p class="mb-3 font-bold">Sabtu, 27 Agustus 2022</p>
+                    <p class="mb-3 font-bold">08:00 WIB s/d Selesai</p>
+                    <p class="font-bold">Hotel Citarum</p>
+                    <p class="mb-5 font-bold">Jalan Citarum No. 16, Bandung, West Java</p>
+                    <p class="font-bold">MAPS</p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3960.8853967750665!2d107.62294006347656!3d-6.904305934906006!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e7b4f2cd312f%3A0x1abda89ff6e190d4!2sCitarum%20Hotel!5e0!3m2!1sen!2sid!4v1661180771847!5m2!1sen!2sid"
+                        width="350" height="200" style="border:0;" allowfullscreen="True" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <svg class="waves1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#304555" fill-opacity="1"
+                    d="M0,128L48,112C96,96,192,64,288,74.7C384,85,480,139,576,144C672,149,768,107,864,101.3C960,96,1056,128,1152,154.7C1248,181,1344,203,1392,213.3L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                </path>
+            </svg>
         </div>
 
     </section>
@@ -133,7 +194,6 @@
     function playAudio() {
         x.play();
     }
-
 </script>
 </body>
 

@@ -1,6 +1,9 @@
+
+
+
 body{
-    background-color: #F0EBE3;
-    color: #000;
+    background-color: #304555;
+    color: #ffffff;
 }
 
 .bg-image{
@@ -9,6 +12,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     justify-content: center;
+    background-image: url('../gambar/DSC00004.jpg');
 }
 .bg-imager{
     position: relative;
@@ -16,18 +20,19 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     justify-content: center;
+    
 
 }
 
 .btn-utama{
-    background-color: #906C5E;
+    background-color: #304555;
     color: #ffffff;
     border-radius: 1rem;
     font-weight: bold;
     text-transform: uppercase;
 }
 .btn-utama:hover{
-    background-color: #E4DCCF;
+    background-color: #ffffff;
     color: #000;
     border-radius: 1rem;
     font-weight: bold;
@@ -37,10 +42,101 @@ body{
 
 .waves{
     position: absolute;
-    bottom: 0;
-    margin-bottom: -7px;
+    top: 0;
+    margin-top: -7px;
     width: 100%;
 }
+.waves1{
+    position: absolute;
+    bottom: 0;
+    margin-top: -7px;
+    width: 100%;
+}
+.waves2{
+    position: absolute;
+    top: 0;
+    margin-top: -7px;
+    width: 100%;
+    transform: rotate(180deg);
+}
+.waves3{
+    position: absolute;
+    margin-top: -7px;
+    width: 100%;
+    bottom: 10px;
+    transform: rotate(180deg);
+}
+
+.parallax > use {
+    -webkit-animation: moveForever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+            animation: moveForever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.parallax > use:nth-child(1) {
+    -webkit-animation-delay: -2s;
+            animation-delay: -2s;
+    -webkit-animation-duration: 7s;
+            animation-duration: 7s;
+}
+
+.parallax > use:nth-child(2) {
+    -webkit-animation-delay: -3s;
+            animation-delay: -3s;
+    -webkit-animation-duration: 10s;
+            animation-duration: 10s;
+}
+
+.parallax > use:nth-child(3) {
+    -webkit-animation-delay: -4s;
+            animation-delay: -4s;
+    -webkit-animation-duration: 13s;
+            animation-duration: 13s;
+}
+
+.parallax > use:nth-child(4) {
+    -webkit-animation-delay: -5s;
+            animation-delay: -5s;
+    -webkit-animation-duration: 20s;
+            animation-duration: 20s;
+}
+
+@-webkit-keyframes moveForever {
+    0% {
+        -webkit-transform: translate3d(-90px, 0, 0);
+                transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(85px, 0, 0);
+                transform: translate3d(85px, 0, 0);
+    }
+}
+
+@keyframes moveForever {
+    0% {
+        -webkit-transform: translate3d(-90px, 0, 0);
+                transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(85px, 0, 0);
+                transform: translate3d(85px, 0, 0);
+    }
+}
+
+@media (min-width : 1024px) {
+    .waves {
+        height: 10rem;
+        min-height: 10rem;
+    }
+    .waves2 {
+        height: 10rem;
+        min-height: 10rem;
+    }
+    .waves1 {
+        height: 10rem;
+        min-height: 10rem;
+    }
+}
+
 
 .profil{
     height: 15rem;
