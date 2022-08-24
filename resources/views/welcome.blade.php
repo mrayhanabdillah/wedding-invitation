@@ -9,7 +9,7 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-    <link href="https://khansaaldy.herokuapp.com/css/style.css" rel="stylesheet">
+    <link href="{{asset('css/style.css')}}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
     <!-- Styles -->
@@ -34,11 +34,9 @@
         </svg>
         <div class="banner-content text-center text-white">
             <div class="max-w-md">
-                <p class="mb-5 text-2xl font-bold">Dear,</p>
-                <p class="text-2xl font-bold">You're Invited</p>
-                <p class="mb-5 font-bold">The Wedding Celebration of</p>
+                <p class="mb-5 mt-[18rem] text-5xl font-bold">Aldi & Khansa</p>
             </div>
-            <button class="btn-utama btn-sm mt-[15rem]" id="close-modal" onclick="playAudio()"><i
+            <button class="btn-utama btn-sm" id="close-modal" onclick="playAudio()"><i
                     class="bi bi-envelope-heart mr-1"></i>Open
                 Invitation</button>
         </div>
@@ -62,16 +60,9 @@
         </audio>
         <div class="bg-imager flex items-center min-h-screen dark:text-white"
             style="background-image: url('{{ asset('foto/DSC00007.jpg') }}">
-            <div class="banner-content text-center text-white">
-                <div class="max-w-md">
-                    <p class="mb-5 text-2xl font-bold">Dear,</p>
-                    <p class="text-2xl font-bold">You're Invited</p>
-                    <p class="mb-5 font-bold">The Wedding Celebration of</p>
-                </div>
-            </div>
         </div>
 
-        <div class="container mx-auto flex justify-center text-center mt-12">
+        <div class="container mx-auto flex justify-center text-center mt-12 revealbawah">
             <div class="lg:max-w-sm">
                 <img src="{{ asset('gambar/diamond.png') }}" height="50" width="50" class="mx-auto mb-5">
                 <p class="mb-3 sm:text-xs lg:text-2xl">سْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</p>
@@ -86,9 +77,9 @@
 
         <div class="flex justify-center flex-col lg:flex-row lg:flex-wrap lg:items-stretch items-center gap-4 mt-2">
             <div class="mt-12">
-                <div class="card w-80 lg:w-96 shadow-xl items-center text-center" style="background-color:#04293A;">
+                <div class="card w-80 lg:w-96 shadow-xl items-center text-center revealkanan" style="background-color:#04293A;">
                     <div class="card-body">
-                        <img src="{{ asset('gambar/teteh.jpg') }}" class="profil mx-auto mb-5">
+                        <img src="{{ asset('foto/DSC00053.jpg') }}" class="profil2 mx-auto mb-5">
                         <a href="https://www.instagram.com/khansamadiyah/" target="_blank"
                             class="flex justify-center mb-5"><svg xmlns="http://www.w3.org/2000/svg" width="30"
                                 height="30" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
@@ -103,14 +94,14 @@
                 </div>
             </div>
 
-            <div class="mt-12 lg:mx-12 lg:mt-48">
+            <div class="mt-12 lg:mx-12 lg:mt-48 revealatas">
                 <h1 class="text-6xl font-bold">&</h1>
             </div>
 
             <div class="mt-12">
-                <div class="card w-80 lg:w-96 shadow-xl items-center text-center" style="background-color:#04293A;">
+                <div class="card w-80 lg:w-96 shadow-xl items-center text-center revealkiri" style="background-color:#04293A;">
                     <div class="card-body">
-                        <img src="{{ asset('gambar/aldy.jpg') }}" class="profil mx-auto mb-5">
+                        <img src="{{ asset('foto/DSC00041.jpg') }}" class="profil mx-auto mb-5">
                         <a href="https://www.instagram.com/rhenaldifrds/" target="_blank"
                             class="flex justify-center mb-5"><svg xmlns="http://www.w3.org/2000/svg" width="30"
                                 height="30" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
@@ -130,18 +121,18 @@
             <div class="lg:max-w-sm">
                 <p class="mb-8 sm:text-xs lg:text-2xl">Dengan rahmat dan ridho Allah Subhanahu Wa Ta'ala,
                     perkenankanlah
-                    kami mengundang Bapak/Ibu/Saudara/i untuk hadir diacara pernikahan kami yang akan dilaksanakan pada
+                    kami mengundang Bapak/Ibu/Saudara/i untuk hadir diacara kami yang akan dilaksanakan pada
                     :</p>
             </div>
         </div>
-        <div class="bg-imager flex min-h-screen dark:text-white"
+        <div class="bg-imager flex min-h-screen"
             style="background-image: url('{{ asset('foto/DSC00028.jpg') }}">
             <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path fill="#304555" fill-opacity="1"
                     d="M0,64L48,96C96,128,192,192,288,213.3C384,235,480,213,576,181.3C672,149,768,107,864,80C960,53,1056,43,1152,42.7C1248,43,1344,53,1392,58.7L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
                 </path>
             </svg>
-            <div class="banner-content flex items-center text-center text-white">
+            <div class=" flex items-center text-center text-white">
                 <div class="max-w-md">
                     <svg class="mx-auto" xmlns="http://www.w3.org/2000/svg" width="50" height="50"
                         fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
@@ -152,14 +143,16 @@
                     </svg>
                     <p class="mt-5 mb-5  text-2xl font-bold">Wedding Dinner</p>
                     <p class="mb-3 font-bold">Sabtu, 27 Agustus 2022</p>
-                    <p class="mb-3 font-bold">08:00 WIB s/d Selesai</p>
+                    <p class="mb-3 font-bold">18.30 WIB s/d Selesai</p>
                     <p class="font-bold">Hotel Citarum</p>
                     <p class="mb-5 font-bold">Jalan Citarum No. 16, Bandung, West Java</p>
                     <p class="font-bold">MAPS</p>
-                    <iframe
+                    <div class="kotak">
+                        <iframe
                         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3960.8853967750665!2d107.62294006347656!3d-6.904305934906006!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e7b4f2cd312f%3A0x1abda89ff6e190d4!2sCitarum%20Hotel!5e0!3m2!1sen!2sid!4v1661180771847!5m2!1sen!2sid"
                         width="350" height="200" style="border:0;" allowfullscreen="True" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
             </div>
             <svg class="waves1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -194,6 +187,70 @@
     function playAudio() {
         x.play();
     }
+
+    function reveal() {
+        var reveals = document.querySelectorAll(".revealkiri");
+
+        for (var i = 0; i < reveals.length; i++) {
+            var windowHeight = window.innerHeight;
+            var elementTop = reveals[i].getBoundingClientRect().top;
+            var elementVisible = 150;
+
+            if (elementTop < windowHeight - elementVisible) {
+                reveals[i].classList.add("active");
+            } else {
+                reveals[i].classList.remove("active");
+            }
+        }
+
+        var reveals = document.querySelectorAll(".revealkanan");
+
+        for (var i = 0; i < reveals.length; i++) {
+            var windowHeight = window.innerHeight;
+            var elementTop = reveals[i].getBoundingClientRect().top;
+            var elementVisible = 150;
+
+            if (elementTop < windowHeight - elementVisible) {
+                reveals[i].classList.add("active");
+            } else {
+                reveals[i].classList.remove("active");
+            }
+        }
+
+        var reveals = document.querySelectorAll(".revealbawah");
+
+        for (var i = 0; i < reveals.length; i++) {
+            var windowHeight = window.innerHeight;
+            var elementTop = reveals[i].getBoundingClientRect().top;
+            var elementVisible = 150;
+
+            if (elementTop < windowHeight - elementVisible) {
+                reveals[i].classList.add("active");
+            } else {
+                reveals[i].classList.remove("active");
+            }
+        }
+
+        var reveals = document.querySelectorAll(".revealatas");
+
+        for (var i = 0; i < reveals.length; i++) {
+            var windowHeight = window.innerHeight;
+            var elementTop = reveals[i].getBoundingClientRect().top;
+            var elementVisible = 150;
+
+            if (elementTop < windowHeight - elementVisible) {
+                reveals[i].classList.add("active");
+            } else {
+                reveals[i].classList.remove("active");
+            }
+        }
+    }
+
+    
+
+    
+
+    window.addEventListener("scroll", reveal);
 </script>
 </body>
 
